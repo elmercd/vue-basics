@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <!--  the element where Vue will be attached  -->
+    <div id="app">
+      <h2>{{ message }}</h2>
+    </div>
+
+    <!--  Vue can be used directly from the CDN like jQuery  -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script>
+      // This is the root Vue instance
+      new Vue({
+        el: "#app",
+        data: {
+          message: "Hello Vue!"
+        }
+      });
+    </script>
+  </body>
+</html>
